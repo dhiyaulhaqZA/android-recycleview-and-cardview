@@ -28,18 +28,10 @@ public class MainActivity extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this);
         mRecycleView.setLayoutManager(mLayoutManager);
 
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-        notesList.add(new Notes("Ngerjain Tugas Jaringan", "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
-
-
+        for (int i = 0; i < 10; i++) {
+            notesList.add(new Notes("Ngerjain Tugas Jaringan",
+                    "Ngerjain jurnal tugas yang ada di drive", "22 Sep 2016", "09:30 AM"));
+        }
         adapter = new SimpleAdapter(notesList);
 
         mRecycleView.setAdapter(adapter);
